@@ -3,8 +3,12 @@
 
 n = int(input("Введи кол-во элементов первого множества: "))
 m = int(input("Введи кол-во элементов второго множества: "))
-spisok_1 = set(map(int, input(f"Введи {n} цифр через пробел: ").split()))
-spisok_2 = set(map(int, input(f"Введи {m} цифр через пробел: ").split()))
+spisok_1 = set(
+    map(int, input(f"Введи {n} цифр через пробел: ").split())
+)  # набора целых чисел в первом множестве
+spisok_2 = set(
+    map(int, input(f"Введи {m} цифр через пробел: ").split())
+)  # набора целых чисел во втором множестве
 n = len(spisok_1)
 m = len(spisok_2)
 spisok_3 = spisok_1.intersection(spisok_2)
